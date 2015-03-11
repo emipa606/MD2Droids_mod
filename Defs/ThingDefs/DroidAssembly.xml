@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <DefName>MD2DroidAssembly</DefName>
+    <EType>BuildingComplex</EType>
+    <label>droid assembly</label>
+    <ThingClass>MD2.DroidAssembly</ThingClass>
+    <Description>A workspace equipped for constructing droids.</Description>
+    <graphicPath>Buildings/Droids/DroidAssembly</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <tickerType>Rare</tickerType>
+    <CostList>
+      <Steel>200</Steel>
+    </CostList>
+    <AltitudeLayer>Waist</AltitudeLayer>
+    <UseStandardHealth>True</UseStandardHealth>
+    <statBases>
+      <WorkToMake>1300</WorkToMake>
+      <MaxHealth>180</MaxHealth>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(3,1)</Size>
+    <graphicOverdraw>False</graphicOverdraw>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>Impassable</Passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionSquareOffset>(0,0,-1)</interactionSquareOffset>
+    <itemSurface>True</itemSurface>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>350</basePowerConsumption>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <researchPrerequisite>MD2Droids</researchPrerequisite>
+  </ThingDef>
+</ThingDefs>

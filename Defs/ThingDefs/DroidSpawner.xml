@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComponents</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <eType>Item</eType>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useStandardHealth>true</useStandardHealth>
+    <statBases>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>1</stackLimit>
+    <tradeability>Never</tradeability>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>false</alwaysHaulable>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase" Name="DroidSpawnerBase" Abstract="true">
+    <thingClass>MD2.DroidSpawner</thingClass>
+    <tickerType>Normal</tickerType>
+    <label>droid spawner</label>
+    <selectable>false</selectable>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <graphicPath>Default</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <thingCategories>
+      <li>MD2Spawners</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="DroidSpawnerBase">
+    <defName>MD2SpawnLogisticsDroid</defName>
+    <label>LogisticsDroid</label>
+  </ThingDef>
+  
+  <ThingDef ParentName="DroidSpawnerBase">
+    <defName>MD2SpawnMiningDroid</defName>
+    <label>MiningDroid</label>
+  </ThingDef>
+
+  <ThingDef ParentName="DroidSpawnerBase">
+    <defName>MD2SpawnGrowerDroid</defName>
+    <label>GrowerDroid</label>
+  </ThingDef>
+
+  <ThingDef ParentName="DroidSpawnerBase">
+    <defName>MD2SpawnMedicDroid</defName>
+    <label>MedicDroid</label>
+  </ThingDef>
+
+  <ThingDef ParentName="DroidSpawnerBase">
+    <defName>MD2SpawnBuilderDroid</defName>
+    <label>BuilderDroid</label>
+  </ThingDef>
+
+  <ThingDef ParentName="DroidSpawnerBase">
+    <defName>MD2SpawnCraftingDroid</defName>
+    <label>CraftingDroid</label>
+  </ThingDef>
+
+  <ThingDef ParentName="DroidSpawnerBase">
+    <defName>MD2SpawnCookingDroid</defName>
+    <label>CookingDroid</label>
+  </ThingDef>
+  
+    <ThingDef ParentName="DroidSpawnerBase">
+    <defName>MD2SpawnBasicCombatDroid</defName>
+    <label>BasicCombatDroid</label>
+  </ThingDef>
+
+  <ThingDef ParentName="DroidSpawnerBase">
+    <defName>MD2SpawnCrematoriusDroid</defName>
+    <label>CrematoriusDroid</label>
+  </ThingDef>
+  
+  
+</ThingDefs>

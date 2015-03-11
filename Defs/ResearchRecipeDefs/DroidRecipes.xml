@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResearchRecipeDefs>
+
+  <ResearchRecipeDef>
+    <defName>MD2MakeLogisticsDroidInfo</defName>
+    <recipeDef>MD2MakeLogisticsDroid</recipeDef>
+    <researchDef>MD2WorkerDroid</researchDef>
+    <buildingDefName>MD2DroidAssembly</buildingDefName>
+  </ResearchRecipeDef>
+
+  <ResearchRecipeDef>
+    <defName>MD2MakeMiningDroidInfo</defName>
+    <recipeDef>MD2MakeMiningDroid</recipeDef>
+    <researchDef>MD2MiningDroid</researchDef>
+    <buildingDefName>MD2DroidAssembly</buildingDefName>
+  </ResearchRecipeDef>
+
+  <ResearchRecipeDef>
+    <defName>MD2MakeGrowerDroidInfo</defName>
+    <recipeDef>MD2MakeGrowerDroid</recipeDef>
+    <researchDef>MD2GrowerDroid</researchDef>
+    <buildingDefName>MD2DroidAssembly</buildingDefName>
+  </ResearchRecipeDef>
+
+  <ResearchRecipeDef>
+    <defName>MD2MakeMedicDroidInfo</defName>
+    <recipeDef>MD2MakeMedicDroid</recipeDef>
+    <researchDef>MD2MedicDroid</researchDef>
+    <buildingDefName>MD2DroidAssembly</buildingDefName>
+  </ResearchRecipeDef>
+
+  <ResearchRecipeDef>
+    <defName>MD2MakeBuilderDroidInfo</defName>
+    <recipeDef>MD2MakeBuilderDroid</recipeDef>
+    <researchDef>MD2BuilderDroid</researchDef>
+    <buildingDefName>MD2DroidAssembly</buildingDefName>
+  </ResearchRecipeDef>
+
+  <ResearchRecipeDef>
+    <defName>MD2MakeCraftingDroidInfo</defName>
+    <recipeDef>MD2MakeCraftingDroid</recipeDef>
+    <researchDef>MD2CraftingDroid</researchDef>
+    <buildingDefName>MD2DroidAssembly</buildingDefName>
+  </ResearchRecipeDef>
+
+  <ResearchRecipeDef>
+    <defName>MD2MakeCookingDroidInfo</defName>
+    <recipeDef>MD2MakeCookingDroid</recipeDef>
+    <researchDef>MD2CookingDroid</researchDef>
+    <buildingDefName>MD2DroidAssembly</buildingDefName>
+  </ResearchRecipeDef>
+
+  <ResearchRecipeDef>
+    <defName>MD2MakeBasicCombatDroidInfo</defName>
+    <recipeDef>MD2MakeBasicCombatDroid</recipeDef>
+    <researchDef>MD2BasicCombatDroid</researchDef>
+    <buildingDefName>MD2DroidAssembly</buildingDefName>
+  </ResearchRecipeDef>
+
+  <ResearchRecipeDef>
+    <defName>MD2MakeCrematoriusDroidInfo</defName>
+    <recipeDef>MD2MakeCrematoriusDroid</recipeDef>
+    <researchDef>MD2CrematoriusDroid</researchDef>
+    <buildingDefName>MD2DroidAssembly</buildingDefName>
+  </ResearchRecipeDef>
+
+</ResearchRecipeDefs>

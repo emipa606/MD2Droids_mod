@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PawnKindDefs>
+
+  <PawnKindDef Name="BaseDroidKind" Abstract ="true" Class="MD2.DroidKindDef">
+    <label>droid</label>
+    <race>DroidRace</race>
+    <pointsCost>999999</pointsCost>
+    <defaultFactionType>Colony</defaultFactionType>
+    <baseRecruitDifficulty>60</baseRecruitDifficulty>
+    <backstoryCategory>Civil</backstoryCategory>
+    <isFighter>false</isFighter>
+    <maxEnergy>750</maxEnergy>
+    <apparelTags>
+      <li>Spacer</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>0</min>
+      <max>0</max>
+    </apparelMoney>
+    <standardBodyGraphicPath>Pawns/Droid/Body/Droid</standardBodyGraphicPath>
+    <headGraphicPath>Pawns/Droid/Head/DroidHead</headGraphicPath>
+    <Settings>MD2DroidSettings</Settings>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
+    <defName>MD2LogisticsDroid</defName>
+    <label>Logistics Droid</label>
+    <allowedWorkTypeDefs>
+      <li>Firefighter</li>
+      <li>Cleaning</li>
+      <li>Hauling</li>
+    </allowedWorkTypeDefs>
+    <backstoryName>LogisticsDroid</backstoryName>
+    <standardBodyGraphicPath>Pawns/Droid/LogisticsDroid/Droid</standardBodyGraphicPath>
+    <headGraphicPath>Pawns/Droid/LogisticsDroid/DroidHead</headGraphicPath>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
+    <defName>MD2MiningDroid</defName>
+    <label>Mining Droid</label>
+    <allowedWorkTypeDefs>
+      <li>Firefighter</li>
+      <li>Mining</li>
+    </allowedWorkTypeDefs>
+    <backstoryName>MiningDroid</backstoryName>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
+    <defName>MD2GrowerDroid</defName>
+    <label>Grower Droid</label>
+    <allowedWorkTypeDefs>
+      <li>Firefighter</li>
+      <li>Growing</li>
+      <li>PlantCutting</li>
+    </allowedWorkTypeDefs>
+    <backstoryName>GrowerDroid</backstoryName>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
+    <defName>MD2MedicDroid</defName>
+    <label>Medic Droid</label>
+    <allowedWorkTypeDefs>
+      <li>Firefighter</li>
+      <li>Doctor</li>
+    </allowedWorkTypeDefs>
+    <backstoryName>MedicDroid</backstoryName>
+    <standardBodyGraphicPath>Pawns/Droid/MedicDroid/DocDroid</standardBodyGraphicPath>
+    <headGraphicPath>Pawns/Droid/MedicDroid/DocDhead</headGraphicPath>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
+    <defName>MD2BuilderDroid</defName>
+    <label>Builder Droid</label>
+    <allowedWorkTypeDefs>
+      <li>Firefighter</li>
+      <li>Construction</li>
+      <li>Repair</li>
+    </allowedWorkTypeDefs>
+    <backstoryName>BuilderDroid</backstoryName>
+    <standardBodyGraphicPath>Pawns/Droid/BuildingDroid/ConstructorDroid</standardBodyGraphicPath>
+    <headGraphicPath>Pawns/Droid/BuildingDroid/ConstructorDhead</headGraphicPath>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
+    <defName>MD2CraftingDroid</defName>
+    <label>Crafting Droid</label>
+    <allowedWorkTypeDefs>
+      <li>Firefighter</li>
+      <li>Crafting</li>
+    </allowedWorkTypeDefs>
+    <backstoryName>CraftingDroid</backstoryName>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
+    <defName>MD2CookingDroid</defName>
+    <label>Cooking Droid</label>
+    <allowedWorkTypeDefs>
+      <li>Firefighter</li>
+      <li>Cooking</li>
+    </allowedWorkTypeDefs>
+    <backstoryName>CookingDroid</backstoryName>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
+    <defName>MD2BasicCombatDroid</defName>
+    <label>Basic Combat Droid</label>
+    <allowedWorkTypeDefs>
+      <li>Firefighter</li>
+      <li>Hunting</li>
+    </allowedWorkTypeDefs>
+    <isFighter>true</isFighter>
+    <backstoryName>BasicCombatDroid</backstoryName>
+    <standardBodyGraphicPath>Pawns/Droid/CombatDroid/BattleDroid</standardBodyGraphicPath>
+    <headGraphicPath>Pawns/Droid/CombatDroid/BattleDhead</headGraphicPath>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
+    <defName>MD2CrematoriusDroid</defName>
+    <label>Crematorius</label>
+    <race>CrematoriusDroidRace</race>
+    <allowedWorkTypeDefs>
+      <li>Firefighter</li>
+    </allowedWorkTypeDefs>
+    <backstoryName>CrematoriusDroid</backstoryName>
+    <standardBodyGraphicPath>Pawns/Droid/Crematorius/Cremabody</standardBodyGraphicPath>
+    <headGraphicPath>Pawns/Droid/Crematorius/Cremahead</headGraphicPath>
+  </PawnKindDef>
+
+  <!-- <PawnKindDef ParentName="BaseDroidKind">
+    <defName></defName>
+    <label> droid</label>
+    <allowedWorkTypeDefs>
+      <li></li>
+    </allowedWorkTypeDefs>
+    <backstoryName></backstoryName>
+  </PawnKindDef> -->
+
+</PawnKindDefs>

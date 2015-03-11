@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+  <WorkGiverDef>
+    <defName>MD2DroidAssembly</defName>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <verb>construct</verb>
+    <gerund>constructing</gerund>
+    <singleBillGiverDef>MD2DroidAssembly</singleBillGiverDef>
+	<requiredActivities>
+		<li>Manipulation</li>
+	</requiredActivities>
+	<priorityInType>30</priorityInType>
+  </WorkGiverDef>
+
+  
+</WorkGivers>
