@@ -39,9 +39,9 @@
 				<li Class="ThinkNode_ConditionalColonist">
 					<subNodes>
 
-            <li Class="JobGiver_WorkRoot">
+            <!--<li Class="JobGiver_WorkRoot">
                 <onlyEmergencyWork>true</onlyEmergencyWork>
-            </li>
+            </li>-->
             
 						<li Class="MD2.JobGiver_ForDroids">
 							<onlyEmergencyWork>false</onlyEmergencyWork>

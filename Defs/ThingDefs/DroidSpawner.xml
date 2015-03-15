@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
-  
+
   <ThingDef Name="ResourceBase" Abstract="True">
     <thingClass>ThingWithComponents</thingClass>
     <label>unspecified resource</label>
@@ -10,6 +10,7 @@
     <useStandardHealth>true</useStandardHealth>
     <statBases>
       <Flammability>1.0</Flammability>
+      <MarketValue>1000</MarketValue>
     </statBases>
     <selectable>true</selectable>
     <altitudeLayer>Item</altitudeLayer>
@@ -25,7 +26,7 @@
     <rotatable>false</rotatable>
     <pathCost>15</pathCost>
   </ThingDef>
-  
+
   <ThingDef ParentName="ResourceBase" Name="DroidSpawnerBase" Abstract="true">
     <thingClass>MD2.DroidSpawner</thingClass>
     <tickerType>Normal</tickerType>
@@ -44,7 +45,7 @@
     <defName>MD2SpawnLogisticsDroid</defName>
     <label>LogisticsDroid</label>
   </ThingDef>
-  
+
   <ThingDef ParentName="DroidSpawnerBase">
     <defName>MD2SpawnMiningDroid</defName>
     <label>MiningDroid</label>
@@ -74,8 +75,8 @@
     <defName>MD2SpawnCookingDroid</defName>
     <label>CookingDroid</label>
   </ThingDef>
-  
-    <ThingDef ParentName="DroidSpawnerBase">
+
+  <ThingDef ParentName="DroidSpawnerBase">
     <defName>MD2SpawnBasicCombatDroid</defName>
     <label>BasicCombatDroid</label>
   </ThingDef>
@@ -84,6 +85,6 @@
     <defName>MD2SpawnCrematoriusDroid</defName>
     <label>CrematoriusDroid</label>
   </ThingDef>
-  
-  
+
+
 </ThingDefs>

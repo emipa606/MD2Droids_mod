@@ -27,6 +27,7 @@
     <defName>MD2LogisticsDroid</defName>
     <label>Logistics Droid</label>
     <allowedWorkTypeDefs>
+      <li>Control</li>
       <li>Firefighter</li>
       <li>Cleaning</li>
       <li>Hauling</li>
@@ -41,6 +42,7 @@
     <label>Mining Droid</label>
     <allowedWorkTypeDefs>
       <li>Firefighter</li>
+      <li>Control</li>
       <li>Mining</li>
     </allowedWorkTypeDefs>
     <backstoryName>MiningDroid</backstoryName>
@@ -51,6 +53,7 @@
     <label>Grower Droid</label>
     <allowedWorkTypeDefs>
       <li>Firefighter</li>
+      <li>Control</li>
       <li>Growing</li>
       <li>PlantCutting</li>
     </allowedWorkTypeDefs>
@@ -62,6 +65,7 @@
     <label>Medic Droid</label>
     <allowedWorkTypeDefs>
       <li>Firefighter</li>
+      <li>Control</li>
       <li>Doctor</li>
     </allowedWorkTypeDefs>
     <backstoryName>MedicDroid</backstoryName>
@@ -74,6 +78,7 @@
     <label>Builder Droid</label>
     <allowedWorkTypeDefs>
       <li>Firefighter</li>
+      <li>Control</li>
       <li>Construction</li>
       <li>Repair</li>
     </allowedWorkTypeDefs>
@@ -87,6 +92,7 @@
     <label>Crafting Droid</label>
     <allowedWorkTypeDefs>
       <li>Firefighter</li>
+      <li>Control</li>
       <li>Crafting</li>
     </allowedWorkTypeDefs>
     <backstoryName>CraftingDroid</backstoryName>
@@ -97,6 +103,7 @@
     <label>Cooking Droid</label>
     <allowedWorkTypeDefs>
       <li>Firefighter</li>
+      <li>Control</li>
       <li>Cooking</li>
     </allowedWorkTypeDefs>
     <backstoryName>CookingDroid</backstoryName>
@@ -107,6 +114,7 @@
     <label>Basic Combat Droid</label>
     <allowedWorkTypeDefs>
       <li>Firefighter</li>
+      <li>Control</li>
       <li>Hunting</li>
     </allowedWorkTypeDefs>
     <isFighter>true</isFighter>
@@ -121,6 +129,7 @@
     <race>CrematoriusDroidRace</race>
     <allowedWorkTypeDefs>
       <li>Firefighter</li>
+      <li>Control</li>
     </allowedWorkTypeDefs>
     <backstoryName>CrematoriusDroid</backstoryName>
     <standardBodyGraphicPath>Pawns/Droid/Crematorius/Cremabody</standardBodyGraphicPath>
