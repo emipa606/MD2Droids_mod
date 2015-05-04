@@ -5,9 +5,8 @@
     <thingClass>ThingWithComponents</thingClass>
     <label>unspecified resource</label>
     <category>Item</category>
-    <eType>Item</eType>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <useStandardHealth>true</useStandardHealth>
+    <useHitPoints>false</useHitPoints>
     <statBases>
       <Flammability>1.0</Flammability>
       <MarketValue>1000</MarketValue>

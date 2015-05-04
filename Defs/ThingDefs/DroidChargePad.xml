@@ -17,13 +17,12 @@
   <ThingDef ParentName="mipBuildingBase">
     <defName>MD2DroidChargePad</defName>
     <label>Droid Charge Pad</label>
-    <eType>BuildingComplex</eType>
     <thingClass>MD2.DroidChargePad</thingClass>
     <graphicPath>Buildings/Droids/DroidCharger</graphicPath>
     <graphicClass>Graphic_Single</graphicClass>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <statBases>
-      <MaxHealth>200</MaxHealth>
+      <MaxHitPoints>200</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <WorkToMake>600</WorkToMake>
       <Beauty>6</Beauty>
@@ -52,7 +51,7 @@
     <researchPrerequisite>MD2DroidCharger</researchPrerequisite>
     <passability>Standable</passability>
     <hasInteractionCell>true</hasInteractionCell>
-    <interactionSquareOffset>(0,0,0)</interactionSquareOffset>
+    <interactionCellOffset>(0,0,0)</interactionCellOffset>
     <staticSunShadowHeight>0</staticSunShadowHeight>
     <killedLeavings>
       <ChunkSlagSteel>1</ChunkSlagSteel>

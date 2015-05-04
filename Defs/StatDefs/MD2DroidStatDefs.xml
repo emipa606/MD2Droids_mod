@@ -18,19 +18,19 @@
         <bonusFactor>0.06</bonusFactor>
       </li>
     </skillNeedFactors>
-    <activityFactors>
+    <capacityFactors>
       <li>
-        <activity>Consciousness</activity>
+        <capacity>Consciousness</capacity>
         <weight>1</weight>
-      </li>
+    </li>
       <li>
-        <activity>Sight</activity>
+        <capacity>Sight</capacity>
         <weight>0.3</weight>
       </li>
       <li>
-        <activity>Manipulation</activity>
+        <capacity>Manipulation</capacity>
         <weight>0.9</weight>
-      </li>
-    </activityFactors>
+    </li>
+    </capacityFactors>
   </StatDef>
 </StatDefs>

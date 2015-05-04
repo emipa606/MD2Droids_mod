@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ThinkTrees>
 
   <ThinkTreeDef>
@@ -12,6 +12,18 @@
         </li>
 
         <li Class="MD2.JobGiver_Critical"/>
+
+        <!-- Prisoner -->
+        <li Class="ThinkNode_ConditionalPrisoner">
+          <subNodes>
+            <li Class="JobGiver_PrisonerEscape" />
+            <li Class="JobGiver_PrisonerGetDressed" />
+            <li Class="JobGiver_WanderCurrentRoom">
+              <maxDanger>Deadly</maxDanger>
+            </li>
+            <li Class="JobGiver_IdleError" />
+          </subNodes>
+        </li>
 
         <!-- Squad brain directives -->
         <li Class="ThinkNode_Subtree">
@@ -27,29 +39,36 @@
             <!-- Queue for forced work -->
             <li Class="JobGiver_JobQueue" />
 
-            <li Class="JobGiver_WorkRoot">
-              <onlyEmergencyWork>true</onlyEmergencyWork>
-            </li>
-
-            <li Class="MD2.JobGiver_GetCorpses"/>
-
             <!-- Seek safe temperatures -->
             <li Class="JobGiver_SeekSafeTemperature" />
 
+            <!-- Do emergency work (supercedes satisfying needs, except starvation) -->
+            <li Class="ThinkNode_ConditionalStarving">
+              <invert>true</invert>
+              <subNodes>
+                <li Class="JobGiver_Work">
+                  <emergency>true</emergency>
+                </li>
+              </subNodes>
+            </li>
+            <li Class="MD2.JobGiver_GetCorpses"/>
+
+            <li Class="MD2.JobGiver_StaySafe"/>
+
+
+            <!-- Optimize apparel -->
+            <li Class="JobGiver_OptimizeApparel" />
           </subNodes>
         </li>
 
-        <li Class="MD2.JobGiver_StaySafe"/>
+        <!-- Main behavior core-->
+        <li Class="MD2.JobGiver_ForDroids"/>
 
-        <!-- If on colonist team, do non-forced non-emergency work and idle -->
+        <li Class="MD2.JobGiver_TopUp"/>
+
+        <!-- Idle wander for colonists -->
         <li Class="ThinkNode_ConditionalColonist">
           <subNodes>
-            <li Class="MD2.JobGiver_ForDroids">
-              <onlyEmergencyWork>false</onlyEmergencyWork>
-            </li>
-
-            <li Class="MD2.JobGiver_TopUp"/>
-
             <li Class="ThinkNode_Tagger">
               <tagToGive>Idle</tagToGive>
               <subNodes>
@@ -58,7 +77,6 @@
                 </li>
               </subNodes>
             </li>
-
           </subNodes>
         </li>
 

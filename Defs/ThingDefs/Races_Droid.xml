@@ -4,7 +4,6 @@
   <ThingDef>
     <defName>MD2DroidCorpse</defName>
     <label>dead droid</label>
-    <eType>Corpse</eType>
     <thingClass>MD2.DroidCorpse</thingClass>
     <tickerType>Normal</tickerType>
     <comps>
@@ -16,13 +15,12 @@
   <!--////////////////////////////////////-->
 
   <ThingDef Name="BasePawn" Abstract="True">
-    <eType>Pawn </eType>
     <thingClass>MD2.Droid</thingClass>
     <category>Pawn</category>
     <selectable>true</selectable>
     <tickerType>Normal</tickerType>
     <altitudeLayer>Pawn</altitudeLayer>
-    <useStandardHealth>false</useStandardHealth>
+    <useHitPoints>false</useHitPoints>
     <hasTooltip>true</hasTooltip>
     <soundImpactDefault>BulletImpactFlesh</soundImpactDefault>
     <inspectorTabs>
@@ -36,17 +34,13 @@
   <ThingDef Name="BaseDroid" Abstract="true" ParentName="BasePawn" Class="MD2.DroidThingDef">
     <label>droid</label>
     <description>An intelligent droid.</description>
-    <uiIconPath>Things/Pawn/Humanoid/UI/IconHuman</uiIconPath>
+    <uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
     <standardHeadGraphicPathMulti>Pawns/Droid/Head/DroidHead</standardHeadGraphicPathMulti>
-    <sunShadowInfo>
-      <baseWidth>0.4</baseWidth>
-      <baseHeight>0.4</baseHeight>
-      <tallness>0.8</tallness>
-    </sunShadowInfo>
+    <useHitPoints>false</useHitPoints>
     <statBases>
       <MoveSpeed>4.75</MoveSpeed>
       <Flammability>0.0</Flammability>
-      <MaxHealth>100</MaxHealth>
+      <MaxHitPoints>100</MaxHitPoints>
       <ComfyTemperatureMin>-80</ComfyTemperatureMin>
       <ComfyTemperatureMax>270</ComfyTemperatureMax>
     </statBases>
@@ -71,26 +65,19 @@
         <linkedBodyPartsGroup>RightKnifeProtrusion</linkedBodyPartsGroup>
       </li>
     </verbs>
-    <drawGUIOverlay>false</drawGUIOverlay>
+    <drawGUIOverlay>true</drawGUIOverlay>
     <race>
       <thinkTree>MD2DroidThinkTree</thinkTree>
-      <!--<mechanoid>true</mechanoid>-->
-      <humanoid>true</humanoid>
+      <mechanoid>true</mechanoid>
+      <intelligence>Humanlike</intelligence>
       <hasGenders>true</hasGenders>
       <isFlesh>false</isFlesh>
       <hasLeather>false</hasLeather>
-      <leatherColor>(255,255,255)</leatherColor>
-      <leatherCommonalityFactor>0.00000001</leatherCommonalityFactor>
-      <leatherInsulation>1</leatherInsulation>
-      <leatherStatFactors>
-        <MarketValue>0</MarketValue>
-      </leatherStatFactors>
       <nameCategory>HumanStandard</nameCategory>
-      <hasStory>true</hasStory>
-      <minFoodTaste>Raw</minFoodTaste>
+      <minFoodPreferability>DesperateOnly</minFoodPreferability>
       <hungerRate>0</hungerRate>
-      <needsRest>true</needsRest>
-      <body>Mechanoid</body>
+      <needsRest>false</needsRest>
+      <body>Scyther</body>
       <bodySize>1</bodySize>
       <healthScale>1.5</healthScale>
       <diet>Omnivorous</diet>
@@ -122,7 +109,7 @@
     <defName>DroidRace</defName>
     <label>droid</label>
     <description>An intelligent droid.</description>
-    <uiIconPath>Things/Pawn/Humanoid/UI/IconHuman</uiIconPath>
+    <uiIconPath>Things/Pawn/HumanLike/UI/IconHuman</uiIconPath>
     <standardHeadGraphicPathMulti>Pawns/Droid/Head/DroidHead</standardHeadGraphicPathMulti>
 
   </ThingDef>
@@ -130,15 +117,10 @@
   <ThingDef ParentName="BaseDroid" Class="MD2.DroidThingDef">
     <defName>CrematoriusDroidRace</defName>
     <thingClass>MD2.Crematorius</thingClass>
-    <sunShadowInfo>
-      <baseWidth>0.7</baseWidth>
-      <baseHeight>0.8</baseHeight>
-      <tallness>0.9</tallness>
-    </sunShadowInfo>
     <statBases>
       <MoveSpeed>3.5</MoveSpeed>
       <Flammability>0.0</Flammability>
-      <MaxHealth>120</MaxHealth>
+      <MaxHitPoints>120</MaxHitPoints>
     </statBases>
     <race>
       <thinkTree>MD2CrematoriusDroidThinkTree</thinkTree>

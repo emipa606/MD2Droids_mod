@@ -1,17 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ThinkTrees>
 
-	<ThinkTreeDef>
-		<defName>MD2DroidThinkTree</defName>
-		<thinkRoot Class="ThinkNode_Priority">
-			<subNodes>
+  <ThinkTreeDef>
+    <defName>MD2DroidThinkTree</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
 
-				<!-- Burning response -->
-				<li Class="ThinkNode_Subtree">
-					<treeDef>BurningResponse</treeDef>
-				</li>
+        <!-- Burning response -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>BurningResponse</treeDef>
+        </li>
 
         <li Class="MD2.JobGiver_Critical"/>
+
+        <!-- Prisoner -->
+        <li Class="ThinkNode_ConditionalPrisoner">
+          <subNodes>
+            <li Class="JobGiver_PrisonerEscape" />
+            <li Class="JobGiver_PrisonerGetDressed" />
+            <li Class="JobGiver_WanderCurrentRoom">
+              <maxDanger>Deadly</maxDanger>
+            </li>
+            <li Class="JobGiver_IdleError" />
+          </subNodes>
+        </li>
 
         <!-- Squad brain directives -->
         <li Class="ThinkNode_Subtree">
@@ -19,47 +31,52 @@
         </li>
 
         <!-- If on colonist team, do forced and emergency work -->
-				<li Class="ThinkNode_ConditionalColonist">
-					<subNodes>
-						<!-- Take direct orders when drafted -->
-						<li Class="JobGiver_Orders" />
+        <li Class="ThinkNode_ConditionalColonist">
+          <subNodes>
+            <!-- Take direct orders when drafted -->
+            <li Class="JobGiver_Orders" />
 
-						<!-- Queue for forced work -->
-						<li Class="JobGiver_JobQueue" />
+            <!-- Queue for forced work -->
+            <li Class="JobGiver_JobQueue" />
 
             <!-- Seek safe temperatures -->
             <li Class="JobGiver_SeekSafeTemperature" />
-            
-					</subNodes>
-				</li>
 
-        <li Class="MD2.JobGiver_StaySafe"/>
+            <!-- Do emergency work (supercedes satisfying needs, except starvation) -->
+            <li Class="ThinkNode_ConditionalStarving">
+              <invert>true</invert>
+              <subNodes>
+                <li Class="MD2.JobGiver_ForDroids">
+                  <emergency>true</emergency>
+                </li>
+              </subNodes>
+            </li>
 
-        <!-- If on colonist team, do non-forced non-emergency work and idle -->
-				<li Class="ThinkNode_ConditionalColonist">
-					<subNodes>
+            <li Class="MD2.JobGiver_StaySafe"/>
 
-            <!--<li Class="JobGiver_WorkRoot">
-                <onlyEmergencyWork>true</onlyEmergencyWork>
-            </li>-->
-            
-						<li Class="MD2.JobGiver_ForDroids">
-							<onlyEmergencyWork>false</onlyEmergencyWork>
-						</li>
+            <!-- Optimize apparel -->
+            <li Class="JobGiver_OptimizeApparel" />
+          </subNodes>
+        </li>
 
-            <li Class="MD2.JobGiver_TopUp"/>
+        <!-- Main behavior core-->
+        <li Class="MD2.JobGiver_ForDroids"/>
 
+        <li Class="MD2.JobGiver_TopUp"/>
+
+        <!-- Idle wander for colonists -->
+        <li Class="ThinkNode_ConditionalColonist">
+          <subNodes>
             <li Class="ThinkNode_Tagger">
-							<tagToGive>Idle</tagToGive>
-							<subNodes>
-								<li Class="JobGiver_WanderColony">
+              <tagToGive>Idle</tagToGive>
+              <subNodes>
+                <li Class="JobGiver_WanderColony">
                   <maxDanger>None</maxDanger>
-								</li>
-							</subNodes>
-						</li>
-
-					</subNodes>
-				</li>
+                </li>
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
 
         <!-- If you're a neutral non-prisoner, exit the map -->
         <li Class="ThinkNode_ConditionalPrisoner">
@@ -72,7 +89,7 @@
             </li>
           </subNodes>
         </li>
-        
+
         <li Class="JobGiver_WanderAnywhere">
           <maxDanger>None</maxDanger>
         </li>
@@ -81,9 +98,9 @@
           <maxDanger>Deadly</maxDanger>
         </li>
 
-          <li Class="JobGiver_IdleError"/>
+        <li Class="JobGiver_IdleError"/>
 
-			</subNodes>
-		</thinkRoot>
-	</ThinkTreeDef>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
 </ThinkTrees>

@@ -8,11 +8,11 @@
     <verb>construct</verb>
     <gerund>constructing</gerund>
     <singleBillGiverDef>MD2DroidAssembly</singleBillGiverDef>
-	<requiredActivities>
+    <requiredCapacities>
 		<li>Manipulation</li>
-	</requiredActivities>
-	<priorityInType>30</priorityInType>
-  </WorkGiverDef>
+	</requiredCapacities>
+	<priorityInType>30</priorityInType> 
+</WorkGiverDef>
 
   
 </WorkGivers>

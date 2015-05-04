@@ -15,7 +15,6 @@
 
   <ThingDef ParentName="BuildingBase">
     <DefName>MD2DroidAssembly</DefName>
-    <EType>BuildingComplex</EType>
     <label>droid assembly</label>
     <ThingClass>MD2.DroidAssembly</ThingClass>
     <Description>A workspace equipped for constructing droids.</Description>
@@ -26,10 +25,9 @@
       <Steel>200</Steel>
     </CostList>
     <AltitudeLayer>Waist</AltitudeLayer>
-    <UseStandardHealth>True</UseStandardHealth>
     <statBases>
       <WorkToMake>1300</WorkToMake>
-      <MaxHealth>180</MaxHealth>
+      <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
     <Size>(3,1)</Size>
@@ -37,7 +35,7 @@
     <DesignationCategory>Production</DesignationCategory>
     <Passability>Impassable</Passability>
     <hasInteractionCell>True</hasInteractionCell>
-    <interactionSquareOffset>(0,0,-1)</interactionSquareOffset>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <itemSurface>True</itemSurface>
     <comps>
       <li>
