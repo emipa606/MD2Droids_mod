@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SettingsDefs>
+<!-- Do not change the names of these defs; it will destroy the world-->
+  <SettingsDef Name="DroidSettingsBase" Abstract="true">
+    <healDelayTicks>12000</healDelayTicks>
+    <skillLevel>15</skillLevel>
+    <passion>Major</passion>
+  </SettingsDef>
+  
+  <SettingsDef ParentName="DroidSettingsBase">
+    <defName>MD2LogisticsDroidSettings</defName>
+  </SettingsDef>
+  
+  <SettingsDef ParentName="DroidSettingsBase">
+    <defName>MD2MiningDroidSettings</defName>
+  </SettingsDef>
+
+  <SettingsDef ParentName="DroidSettingsBase">
+    <defName>MD2GrowerDroidSettings</defName>
+  </SettingsDef>
+
+  <SettingsDef ParentName="DroidSettingsBase">
+    <defName>MD2MedicDroidSettings</defName>
+  </SettingsDef>
+
+  <SettingsDef ParentName="DroidSettingsBase">
+    <defName>MD2BuilderDroidSettings</defName>
+  </SettingsDef>
+
+  <SettingsDef ParentName="DroidSettingsBase">
+    <defName>MD2CraftingDroidSettings</defName>
+  </SettingsDef>
+
+  <SettingsDef ParentName="DroidSettingsBase">
+    <defName>MD2CoookingDroidSettings</defName>
+  </SettingsDef>
+
+  <SettingsDef ParentName="DroidSettingsBase">
+    <defName>MD2BasicCombatDroidSettings</defName>
+  </SettingsDef>
+
+  <SettingsDef ParentName="DroidSettingsBase">
+    <defName>MD2CrematoriusDroidSettings</defName>
+  </SettingsDef>
+
+</SettingsDefs>

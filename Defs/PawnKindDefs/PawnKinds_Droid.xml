@@ -19,7 +19,7 @@
     </apparelMoney>
     <standardBodyGraphicPath>Pawns/Droid/Body/Droid</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/Head/DroidHead</headGraphicPath>
-    <Settings>MD2DroidSettings</Settings>
+    <Settings>MD2LogisticsDroidSettings</Settings>
   </PawnKindDef>
 
 
@@ -35,6 +35,7 @@
     <backstoryName>LogisticsDroid</backstoryName>
     <standardBodyGraphicPath>Pawns/Droid/LogisticsDroid/Droid</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/LogisticsDroid/DroidHead</headGraphicPath>
+    <Settings>MD2LogisticsDroidSettings</Settings>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
@@ -46,6 +47,7 @@
       <li>Mining</li>
     </allowedWorkTypeDefs>
     <backstoryName>MiningDroid</backstoryName>
+    <Settings>MD2MiningDroidSettings</Settings>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
@@ -58,6 +60,7 @@
       <li>PlantCutting</li>
     </allowedWorkTypeDefs>
     <backstoryName>GrowerDroid</backstoryName>
+    <Settings>MD2GrowerDroidSettings</Settings>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
@@ -71,6 +74,7 @@
     <backstoryName>MedicDroid</backstoryName>
     <standardBodyGraphicPath>Pawns/Droid/MedicDroid/DocDroid</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/MedicDroid/DocDhead</headGraphicPath>
+    <Settings>MD2MedicDroidSettings</Settings>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
@@ -85,6 +89,7 @@
     <backstoryName>BuilderDroid</backstoryName>
     <standardBodyGraphicPath>Pawns/Droid/BuildingDroid/ConstructorDroid</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/BuildingDroid/ConstructorDhead</headGraphicPath>
+    <Settings>MD2BuilderDroidSettings</Settings>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
@@ -96,6 +101,7 @@
       <li>Crafting</li>
     </allowedWorkTypeDefs>
     <backstoryName>CraftingDroid</backstoryName>
+    <Settings>MD2CraftingDroidSettings</Settings>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
@@ -107,6 +113,7 @@
       <li>Cooking</li>
     </allowedWorkTypeDefs>
     <backstoryName>CookingDroid</backstoryName>
+    <Settings>MD2CoookingDroidSettings</Settings>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
@@ -121,6 +128,7 @@
     <backstoryName>BasicCombatDroid</backstoryName>
     <standardBodyGraphicPath>Pawns/Droid/CombatDroid/BattleDroid</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/CombatDroid/BattleDhead</headGraphicPath>
+    <Settings>MD2BasicCombatDroidSettings</Settings>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
@@ -134,6 +142,7 @@
     <backstoryName>CrematoriusDroid</backstoryName>
     <standardBodyGraphicPath>Pawns/Droid/Crematorius/Cremabody</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/Crematorius/Cremahead</headGraphicPath>
+    <Settings>MD2CrematoriusDroidSettings</Settings>
   </PawnKindDef>
 
   <!-- <PawnKindDef ParentName="BaseDroidKind">
