@@ -99,6 +99,7 @@
       <li>Firefighter</li>
       <li>Flicker</li>
       <li>Crafting</li>
+      <li>Smithing</li>
     </allowedWorkTypeDefs>
     <backstoryName>CraftingDroid</backstoryName>
     <Settings>MD2CraftingDroidSettings</Settings>
