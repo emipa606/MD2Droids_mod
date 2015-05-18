@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BackstoryDefs>
+  <!--Body types:
+  Undefined
+  Thin
+  Hulk
+  Fat
+  Male
+  Female
+  -->
+  
+  <!--Character references:
+  NAME = character name
+  HE = will place he/she depending on character's gender
+  HIS = will place his/her depending on character's gender
+  HECAP = will place capitalised he/she depending on character's gender
+  HISCAP = will place capitalised his/her depending on character's gender
+  -->
+  
+  <!--Spawn Categories:
+  Civil
+  Raider
+  Slave
+
+These are used when a pawn is spawned. Civil is for visitors/crashing drop pods/normal people. Raider is for raiders/pirates and the likes.
+Slave is for people who are bought from slave traders. Add these tags to decide which people can be assigned the backstory.
+  -->
+  
+  <!--
+WorkDisables:
+		None
+		Intellectual
+		ManualDumb
+		ManualSkilled
+		Violent
+		Caring
+		Social
+		Scary
+		Artistic
+		Crafting
+		Cooking
+		Firefighting
+		Cleaning
+		Hauling
+		PlantWork
+		Mining
+    
+    WorkDisables are tags that all worktypes have. By adding tags to this list, you will disable the pawn who has this backstory from being able
+    to do that type of work. For example, if I add the 'Intellectual' tag to the list, the pawn won't be able to do Research, as the Research
+    work type requires the Intellectual tag. Some work types have two or more work tags associated with them, such as Cleaning. Cleaning requires the 
+    Cleaning and ManualDumb tags. If the workDisables list has one or more of the tags associated with a work type, then that work type will be 
+    disabled for the pawn. For example, if I add the Cleaning tag to the list, then the pawn won't be able to do Cleaning. If I add ManualDumb to 
+    the list, then any work type which has the ManualDumb tag will be disabled. To see which work types have which tags, open the WorkTypes.xml file
+    loacted at:
+    Core/Defs/WorkTypeDefs/WorkTypes.xml
+    in the core mod folder. Search for the work type you are looking for, and check its workTags list.
+  -->
+  
+  <!--
+  Slot:
+Adulthood
+Childhood
+
+This sets whether the backstory is an Adulthood or Childhood backstory.
+  -->
+  
+  <!--
+Skillgains:
+The amount is the number to be added or subtracted from that skill. The range for this number is -20 to 20, do not go outside this range.
+defNames:
+Construction
+Growing
+Research
+Mining
+Shooting
+Melee
+Social
+Cooking
+Medicine
+Artistic
+Crafting
+
+These are the skills that all colonists have. When adding one to the skillGains list, you must get the name extactly right, with capital letters and
+all.
+  -->
+
+  <BackstoryDef Name="DefaultDroidStory" Abstract="true">
+    <baseDescription>A droid.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodytypeMale>Male</bodytypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>false</shuffleable>
+    <saveKeyIdentifier>MD2</saveKeyIdentifier>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>Civil</li>
+    </spawnCategories>
+    <workAllows>
+      <li>Firefighting</li>
+      <li>Scary</li>
+    </workAllows>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="DefaultDroidStory">
+    <defName>LogisticsDroid</defName>
+    <title>Logistics droid</title>
+    <titleShort>Logistics droid</titleShort>
+    <workAllows>
+      <li>Cleaning</li>
+      <li>Hauling</li>
+      <li>ManualDumb</li>
+    </workAllows>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="DefaultDroidStory">
+    <defName>MiningDroid</defName>
+    <title>Mining droid</title>
+    <titleShort>Mining droid</titleShort>
+    <workAllows>
+      <li>ManualSkilled</li>
+      <li>Mining</li>
+    </workAllows>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="DefaultDroidStory">
+    <defName>GrowerDroid</defName>
+    <title>Grower droid</title>
+    <titleShort>Grower droid</titleShort>
+    <workAllows>
+      <li>ManualSkilled</li>
+      <li>PlantWork</li>
+      <li>ManualDumb</li>
+    </workAllows>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="DefaultDroidStory">
+    <defName>MedicDroid</defName>
+    <title>Medic droid</title>
+    <titleShort>Medic droid</titleShort>
+    <workAllows>
+      <li>Caring</li>
+    </workAllows>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="DefaultDroidStory">
+    <defName>BuilderDroid</defName>
+    <title>Builder droid</title>
+    <titleShort>Builder droid</titleShort>
+    <workAllows>
+      <li>ManualSkilled</li>
+    </workAllows>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="DefaultDroidStory">
+    <defName>CraftingDroid</defName>
+    <title>Crafting droid</title>
+    <titleShort>Crafting droid</titleShort>
+    <workAllows>
+      <li>ManualSkilled</li>
+      <li>Crafting</li>
+    </workAllows>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="DefaultDroidStory">
+    <defName>CookingDroid</defName>
+    <title>Cooking droid</title>
+    <titleShort>Cooking droid</titleShort>
+    <workAllows>
+      <li>ManualSkilled</li>
+      <li>Cooking</li>
+    </workAllows>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="DefaultDroidStory">
+    <defName>BasicCombatDroid</defName>
+    <title>Basic combat droid</title>
+    <titleShort>Basic combat droid</titleShort>
+    <workAllows>
+      <li>Violent</li>
+    </workAllows>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="DefaultDroidStory">
+    <defName>CrematoriusDroid</defName>
+    <title>Crematorius droid</title>
+    <titleShort>Crematorius droid</titleShort>
+  </BackstoryDef>
+  
+</BackstoryDefs>

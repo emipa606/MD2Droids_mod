@@ -32,7 +32,7 @@
       <li>Cleaning</li>
       <li>Hauling</li>
     </allowedWorkTypeDefs>
-    <backstoryName>LogisticsDroid</backstoryName>
+    <backstoryDef>LogisticsDroid</backstoryDef>
     <standardBodyGraphicPath>Pawns/Droid/LogisticsDroid/Droid</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/LogisticsDroid/DroidHead</headGraphicPath>
     <Settings>MD2LogisticsDroidSettings</Settings>
@@ -46,7 +46,7 @@
       <li>Flicker</li>
       <li>Mining</li>
     </allowedWorkTypeDefs>
-    <backstoryName>MiningDroid</backstoryName>
+    <backstoryDef>MiningDroid</backstoryDef>
     <Settings>MD2MiningDroidSettings</Settings>
   </PawnKindDef>
 
@@ -59,7 +59,7 @@
       <li>Growing</li>
       <li>PlantCutting</li>
     </allowedWorkTypeDefs>
-    <backstoryName>GrowerDroid</backstoryName>
+    <backstoryDef>GrowerDroid</backstoryDef>
     <Settings>MD2GrowerDroidSettings</Settings>
   </PawnKindDef>
 
@@ -71,7 +71,7 @@
       <li>Flicker</li>
       <li>Doctor</li>
     </allowedWorkTypeDefs>
-    <backstoryName>MedicDroid</backstoryName>
+    <backstoryDef>MedicDroid</backstoryDef>
     <standardBodyGraphicPath>Pawns/Droid/MedicDroid/DocDroid</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/MedicDroid/DocDhead</headGraphicPath>
     <Settings>MD2MedicDroidSettings</Settings>
@@ -86,7 +86,7 @@
       <li>Construction</li>
       <li>Repair</li>
     </allowedWorkTypeDefs>
-    <backstoryName>BuilderDroid</backstoryName>
+    <backstoryDef>BuilderDroid</backstoryDef>
     <standardBodyGraphicPath>Pawns/Droid/BuildingDroid/ConstructorDroid</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/BuildingDroid/ConstructorDhead</headGraphicPath>
     <Settings>MD2BuilderDroidSettings</Settings>
@@ -101,7 +101,7 @@
       <li>Crafting</li>
       <li>Smithing</li>
     </allowedWorkTypeDefs>
-    <backstoryName>CraftingDroid</backstoryName>
+    <backstoryDef>CraftingDroid</backstoryDef>
     <Settings>MD2CraftingDroidSettings</Settings>
   </PawnKindDef>
 
@@ -113,7 +113,7 @@
       <li>Flicker</li>
       <li>Cooking</li>
     </allowedWorkTypeDefs>
-    <backstoryName>CookingDroid</backstoryName>
+    <backstoryDef>CookingDroid</backstoryDef>
     <Settings>MD2CoookingDroidSettings</Settings>
   </PawnKindDef>
 
@@ -126,7 +126,7 @@
       <li>Hunting</li>
     </allowedWorkTypeDefs>
     <isFighter>true</isFighter>
-    <backstoryName>BasicCombatDroid</backstoryName>
+    <backstoryDef>BasicCombatDroid</backstoryDef>
     <standardBodyGraphicPath>Pawns/Droid/CombatDroid/BattleDroid</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/CombatDroid/BattleDhead</headGraphicPath>
     <Settings>MD2BasicCombatDroidSettings</Settings>
@@ -140,7 +140,7 @@
       <li>Firefighter</li>
       <li>Flicker</li>
     </allowedWorkTypeDefs>
-    <backstoryName>CrematoriusDroid</backstoryName>
+    <backstoryDef>CrematoriusDroid</backstoryDef>
     <standardBodyGraphicPath>Pawns/Droid/Crematorius/Cremabody</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/Crematorius/Cremahead</headGraphicPath>
     <Settings>MD2CrematoriusDroidSettings</Settings>
@@ -152,7 +152,7 @@
     <allowedWorkTypeDefs>
       <li></li>
     </allowedWorkTypeDefs>
-    <backstoryName></backstoryName>
+    <backstoryDef></backstoryDef>
   </PawnKindDef> -->
 
 </PawnKindDefs>

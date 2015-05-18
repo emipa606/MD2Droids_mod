@@ -27,6 +27,7 @@
       <li>ITab_Pawn_Prisoner</li>
       <li>ITab_Pawn_Gear</li>
       <li>ITab_Pawn_Health</li>
+      <li>ITab_Pawn_Character</li>
     </inspectorTabs>
     <drawGUIOverlay>true</drawGUIOverlay>
   </ThingDef>
