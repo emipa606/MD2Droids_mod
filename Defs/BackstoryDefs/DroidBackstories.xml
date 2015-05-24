@@ -185,5 +185,25 @@ all.
     <title>Crematorius droid</title>
     <titleShort>Crematorius droid</titleShort>
   </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>CleaningDroid</defName>
+    <title>Cleaning droid</title>
+    <titleShort>Cleaning droid</titleShort>
+    <baseDescription>A cleaning droid.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodytypeMale>Male</bodytypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>false</shuffleable>
+    <saveKeyIdentifier>MD2</saveKeyIdentifier>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>Civil</li>
+    </spawnCategories>
+    <workAllows>
+      <li>ManualDumb</li>
+      <li>Cleaning</li>
+    </workAllows>
+  </BackstoryDef>
   
 </BackstoryDefs>

@@ -42,5 +42,10 @@
   <SettingsDef ParentName="DroidSettingsBase">
     <defName>MD2CrematoriusDroidSettings</defName>
   </SettingsDef>
+  
+  <SettingsDef ParentName="DroidSettingsBase">
+    <defName>MD2CleaningDroidSettings</defName>
+      <healDelayTicks>6000</healDelayTicks>
+  </SettingsDef>
 
 </SettingsDefs>

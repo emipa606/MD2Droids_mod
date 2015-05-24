@@ -28,6 +28,7 @@
       <li>ITab_Pawn_Gear</li>
       <li>ITab_Pawn_Health</li>
       <li>ITab_Pawn_Character</li>
+      <li>ITab_Pawn_Needs</li>
     </inspectorTabs>
     <drawGUIOverlay>true</drawGUIOverlay>
   </ThingDef>
@@ -55,33 +56,33 @@
         <verbClass>Verb_MeleeAttack</verbClass>
         <defaultCooldownTicks>100</defaultCooldownTicks>
         <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
-        <meleeDamageDef>Cut</meleeDamageDef>
-        <linkedBodyPartsGroup>LeftKnifeProtrusion</linkedBodyPartsGroup>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
         <defaultCooldownTicks>100</defaultCooldownTicks>
         <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
-        <meleeDamageDef>Cut</meleeDamageDef>
-        <linkedBodyPartsGroup>RightKnifeProtrusion</linkedBodyPartsGroup>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
       </li>
     </verbs>
     <drawGUIOverlay>true</drawGUIOverlay>
     <race>
       <thinkTree>MD2DroidThinkTree</thinkTree>
       <mechanoid>true</mechanoid>
-      <intelligence>Humanlike</intelligence>
-      <hasGenders>true</hasGenders>
+      <intelligence>ToolUser</intelligence>
+      <hasGenders>false</hasGenders>
       <isFlesh>false</isFlesh>
       <hasLeather>false</hasLeather>
       <nameCategory>HumanStandard</nameCategory>
       <minFoodPreferability>DesperateOnly</minFoodPreferability>
       <hungerRate>0</hungerRate>
       <needsRest>false</needsRest>
-      <body>Scyther</body>
+      <body>MD2DroidBody</body>
       <bodySize>1</bodySize>
       <healthScale>1.5</healthScale>
-      <diet>Omnivorous</diet>
+      <diet>NeverEats</diet>
       <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
       <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
       <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
@@ -113,6 +114,21 @@
     <uiIconPath>Things/Pawn/HumanLike/UI/IconHuman</uiIconPath>
     <standardHeadGraphicPathMulti>Pawns/Droid/Head/DroidHead</standardHeadGraphicPathMulti>
 
+  </ThingDef>
+
+  <ThingDef ParentName="BaseDroid" Class="MD2.DroidThingDef">
+    <defName>CleaningDroidRace</defName>
+    <label>droid</label>
+    <description>An unintelligent cleaning droid.</description>
+    <uiIconPath>Things/Pawn/HumanLike/UI/IconHuman</uiIconPath>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MoveSpeed>6</MoveSpeed>
+      <MaxHitPoints>50</MaxHitPoints>
+    </statBases>
+    <race>
+      <intelligence>ToolUser</intelligence>
+    </race>
   </ThingDef>
 
   <ThingDef ParentName="BaseDroid" Class="MD2.DroidThingDef">

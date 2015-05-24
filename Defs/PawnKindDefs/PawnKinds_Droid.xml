@@ -20,6 +20,10 @@
     <standardBodyGraphicPath>Pawns/Droid/Body/Droid</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/Head/DroidHead</headGraphicPath>
     <Settings>MD2LogisticsDroidSettings</Settings>
+    <explodeOnDeath>true</explodeOnDeath>
+    <explosionRadius>1.9</explosionRadius>
+    <disableOnSolarFlare>true</disableOnSolarFlare>
+    <EnergyUseRate>200</EnergyUseRate>
   </PawnKindDef>
 
 
@@ -100,6 +104,7 @@
       <li>Flicker</li>
       <li>Crafting</li>
       <li>Smithing</li>
+      <li>Tailoring</li>
     </allowedWorkTypeDefs>
     <backstoryDef>CraftingDroid</backstoryDef>
     <Settings>MD2CraftingDroidSettings</Settings>
@@ -144,6 +149,22 @@
     <standardBodyGraphicPath>Pawns/Droid/Crematorius/Cremabody</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/Crematorius/Cremahead</headGraphicPath>
     <Settings>MD2CrematoriusDroidSettings</Settings>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseDroidKind" Class="MD2.DroidKindDef">
+    <defName>MD2CleaningDroid</defName>
+    <label>Cleaning Droid</label>
+    <race>CleaningDroidRace</race>
+    <maxEnergy>400</maxEnergy>
+    <allowedWorkTypeDefs>
+      <li>Cleaning</li>
+    </allowedWorkTypeDefs>
+    <backstoryDef>CleaningDroid</backstoryDef>
+    <standardBodyGraphicPath>Pawns/Droid/CleaningDroid/CleaningDroid</standardBodyGraphicPath>
+    <headGraphicPath></headGraphicPath>
+    <Settings>MD2CleaningDroidSettings</Settings>
+    <explodeOnDeath>false</explodeOnDeath>
+    <EnergyUseRate>230</EnergyUseRate>
   </PawnKindDef>
 
   <!-- <PawnKindDef ParentName="BaseDroidKind">

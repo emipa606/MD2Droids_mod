@@ -42,47 +42,52 @@
 
   <ThingDef ParentName="DroidSpawnerBase">
     <defName>MD2SpawnLogisticsDroid</defName>
-    <label>LogisticsDroid</label>
+    <label>MD2LogisticsDroid</label>
   </ThingDef>
 
   <ThingDef ParentName="DroidSpawnerBase">
     <defName>MD2SpawnMiningDroid</defName>
-    <label>MiningDroid</label>
+    <label>MD2MiningDroid</label>
   </ThingDef>
 
   <ThingDef ParentName="DroidSpawnerBase">
     <defName>MD2SpawnGrowerDroid</defName>
-    <label>GrowerDroid</label>
+    <label>MD2GrowerDroid</label>
   </ThingDef>
 
   <ThingDef ParentName="DroidSpawnerBase">
     <defName>MD2SpawnMedicDroid</defName>
-    <label>MedicDroid</label>
+    <label>MD2MedicDroid</label>
   </ThingDef>
 
   <ThingDef ParentName="DroidSpawnerBase">
     <defName>MD2SpawnBuilderDroid</defName>
-    <label>BuilderDroid</label>
+    <label>MD2BuilderDroid</label>
   </ThingDef>
 
   <ThingDef ParentName="DroidSpawnerBase">
     <defName>MD2SpawnCraftingDroid</defName>
-    <label>CraftingDroid</label>
+    <label>MD2CraftingDroid</label>
   </ThingDef>
 
   <ThingDef ParentName="DroidSpawnerBase">
     <defName>MD2SpawnCookingDroid</defName>
-    <label>CookingDroid</label>
+    <label>MD2CookingDroid</label>
   </ThingDef>
 
   <ThingDef ParentName="DroidSpawnerBase">
     <defName>MD2SpawnBasicCombatDroid</defName>
-    <label>BasicCombatDroid</label>
+    <label>MD2BasicCombatDroid</label>
   </ThingDef>
 
   <ThingDef ParentName="DroidSpawnerBase">
     <defName>MD2SpawnCrematoriusDroid</defName>
-    <label>CrematoriusDroid</label>
+    <label>MD2CrematoriusDroid</label>
+  </ThingDef>
+
+  <ThingDef ParentName="DroidSpawnerBase">
+    <defName>MD2SpawnCleaningDroid</defName>
+    <label>MD2CleaningDroid</label>
   </ThingDef>
 
 

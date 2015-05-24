@@ -414,4 +414,43 @@
     <workSkill>Crafting</workSkill>
   </RecipeDef>
 
+  <RecipeDef ParentName="BaseDroidRecipe">
+    <defName>MD2MakeCleaningDroid</defName>
+    <label>make cleaning droid</label>
+    <description>
+      Constructs a simple cleaning droid.
+    </description>
+    <recipeUsers>
+      <li>MD2DroidAssembly</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MD2Circuitry</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <products>
+      <MD2SpawnCleaningDroid>1</MD2SpawnCleaningDroid>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>MD2Circuitry</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
 </RecipeDefs>
