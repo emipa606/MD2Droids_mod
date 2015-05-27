@@ -14,5 +14,17 @@
 	<priorityInType>30</priorityInType> 
 </WorkGiverDef>
 
+  <WorkGiverDef>
+    <defName>MD2DroidGotoRepairStation</defName>
+    <giverClass>MD2.WorkGiver_DroidGotoRepairStation</giverClass>
+    <workType>MD2Maintenance</workType>
+    <verb>repair</verb>
+    <gerund>repairing</gerund>
+    <requiredCapacities>
+      <li>Moving</li>
+    </requiredCapacities>
+    <priorityInType>10</priorityInType>
+  </WorkGiverDef>
+
   
 </WorkGivers>

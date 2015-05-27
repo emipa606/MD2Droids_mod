@@ -17,6 +17,9 @@
       <min>0</min>
       <max>0</max>
     </apparelMoney>
+    <allowedWorkTypeDefs>
+      <li>MD2Maintenance</li>
+    </allowedWorkTypeDefs>
     <standardBodyGraphicPath>Pawns/Droid/Body/Droid</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/Head/DroidHead</headGraphicPath>
     <Settings>MD2LogisticsDroidSettings</Settings>

@@ -31,6 +31,16 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
+    <defName>MD2DroidRepairStation</defName>
+    <label>MD2 Droid Repair Station</label>
+    <description>This allows you to build the droid repair station, which is used to repair droids when they are damaged. It requires power to operate and will repair normal damages automatically. To repair missing parts, you must build a repair station supplier next to the repair station and supply it with steel. Each missing part takes 10 steel to replace.</description>
+    <totalCost>300</totalCost>
+    <prerequisites>
+      <li>MD2DroidCharger</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
     <defName>MD2DroidSolarShielding</defName>
     <label>MD2 Droid Solar Shielding</label>
     <description>Shields droids from the effects of a solar flare allowing them to continue working in the downtime.</description>

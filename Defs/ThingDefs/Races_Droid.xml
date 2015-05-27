@@ -33,7 +33,7 @@
     <drawGUIOverlay>true</drawGUIOverlay>
   </ThingDef>
 
-  <ThingDef Name="BaseDroid" Abstract="true" ParentName="BasePawn" Class="MD2.DroidThingDef">
+  <ThingDef Name="BaseDroid" Abstract="true" ParentName="BasePawn" Class="MD2.ThingDef_DroidRace">
     <label>droid</label>
     <description>An intelligent droid.</description>
     <uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
@@ -107,7 +107,7 @@
   </race>
   </ThingDef>
 
-  <ThingDef ParentName="BaseDroid" Class="MD2.DroidThingDef">
+  <ThingDef ParentName="BaseDroid" Class="MD2.ThingDef_DroidRace">
     <defName>DroidRace</defName>
     <label>droid</label>
     <description>An intelligent droid.</description>
@@ -116,7 +116,7 @@
 
   </ThingDef>
 
-  <ThingDef ParentName="BaseDroid" Class="MD2.DroidThingDef">
+  <ThingDef ParentName="BaseDroid" Class="MD2.ThingDef_DroidRace">
     <defName>CleaningDroidRace</defName>
     <label>droid</label>
     <description>An unintelligent cleaning droid.</description>
@@ -131,7 +131,7 @@
     </race>
   </ThingDef>
 
-  <ThingDef ParentName="BaseDroid" Class="MD2.DroidThingDef">
+  <ThingDef ParentName="BaseDroid" Class="MD2.ThingDef_DroidRace">
     <defName>CrematoriusDroidRace</defName>
     <thingClass>MD2.Crematorius</thingClass>
     <statBases>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkTypeDefs>
+
+  <WorkTypeDef>
+		<defName>MD2Maintenance</defName>
+    <labelShort>Maintenance</labelShort>
+		<pawnLabel>Maintainee</pawnLabel>
+		<gerundLabel>Getting maintenance</gerundLabel>
+		<description>Maintainees go to get repairs done on themselves.</description>
+		<verb>Get repaired at</verb>
+		<naturalPriority>1200</naturalPriority>
+    <alwaysStartActive>false</alwaysStartActive>
+    <visible>false</visible>
+	</WorkTypeDef>
+
+</WorkTypeDefs>

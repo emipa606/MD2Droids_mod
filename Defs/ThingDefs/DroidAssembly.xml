@@ -16,7 +16,7 @@
   <ThingDef ParentName="BuildingBase">
     <DefName>MD2DroidAssembly</DefName>
     <label>droid assembly</label>
-    <ThingClass>MD2.DroidAssembly</ThingClass>
+    <ThingClass>MD2.Building_DroidAssembly</ThingClass>
     <Description>A workspace equipped for constructing droids.</Description>
     <graphicPath>Buildings/Droids/DroidAssembly</graphicPath>
     <graphicClass>Graphic_Single</graphicClass>
