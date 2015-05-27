@@ -18,7 +18,7 @@
     <defName>MD2DroidRepairStation</defName>
     <label>Droid Repair Station</label>
     <thingClass>MD2.Building_DroidRepairStation</thingClass>
-    <graphicPath>Buildings/Droids/DroidCharger</graphicPath>
+    <graphicPath>Buildings/DroidCharger</graphicPath>
     <graphicClass>Graphic_Single</graphicClass>
     <altitudeLayer>Waist</altitudeLayer>
     <repairAmount>3</repairAmount>

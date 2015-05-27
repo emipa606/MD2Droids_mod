@@ -18,7 +18,7 @@
     <defName>MD2DroidChargePad</defName>
     <label>Droid Charge Pad</label>
     <thingClass>MD2.Building_DroidChargePad</thingClass>
-    <graphicPath>Buildings/Droids/DroidCharger</graphicPath>
+    <graphicPath>Buildings/RepairStation</graphicPath>
     <graphicClass>Graphic_Single</graphicClass>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <statBases>

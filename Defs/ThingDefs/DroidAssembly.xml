@@ -18,7 +18,7 @@
     <label>droid assembly</label>
     <ThingClass>MD2.Building_DroidAssembly</ThingClass>
     <Description>A workspace equipped for constructing droids.</Description>
-    <graphicPath>Buildings/Droids/DroidAssembly</graphicPath>
+    <graphicPath>Buildings/DroidAssembly</graphicPath>
     <graphicClass>Graphic_Single</graphicClass>
     <tickerType>Rare</tickerType>
     <CostList>
