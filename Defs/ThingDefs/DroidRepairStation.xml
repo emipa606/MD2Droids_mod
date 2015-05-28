@@ -18,13 +18,14 @@
     <defName>MD2DroidRepairStation</defName>
     <label>Droid Repair Station</label>
     <thingClass>MD2.Building_DroidRepairStation</thingClass>
-    <graphicPath>Buildings/DroidCharger</graphicPath>
+    <graphicPath>Buildings/RepairStation</graphicPath>
     <graphicClass>Graphic_Single</graphicClass>
     <altitudeLayer>Waist</altitudeLayer>
     <repairAmount>3</repairAmount>
     <repairThingDef>Steel</repairThingDef>
     <repairCostAmount>10</repairCostAmount>
     <replacePartsCostsResources>true</replacePartsCostsResources>
+    <repairTickCount>60</repairTickCount>
     <building>
       <wantsHopperAdjacent>true</wantsHopperAdjacent>
     </building>
@@ -37,9 +38,6 @@
     <tickerType>Normal</tickerType>
     <description>Droids will flock here to charge themselves.</description>
     <comps>
-      <li>
-        <compClass>MD2.CompDroidRepairStation</compClass>
-      </li>
       <li>
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>1000</basePowerConsumption>

@@ -9,7 +9,6 @@
     <baseRecruitDifficulty>60</baseRecruitDifficulty>
     <backstoryCategory>Civil</backstoryCategory>
     <isFighter>false</isFighter>
-    <maxEnergy>750</maxEnergy>
     <apparelTags>
       <li>Spacer</li>
     </apparelTags>
@@ -22,11 +21,12 @@
     </allowedWorkTypeDefs>
     <standardBodyGraphicPath>Pawns/Droid/Body/Droid</standardBodyGraphicPath>
     <headGraphicPath>Pawns/Droid/Head/DroidHead</headGraphicPath>
+    <maxEnergy>650</maxEnergy>
     <Settings>MD2LogisticsDroidSettings</Settings>
     <explodeOnDeath>true</explodeOnDeath>
     <explosionRadius>1.9</explosionRadius>
     <disableOnSolarFlare>true</disableOnSolarFlare>
-    <EnergyUseRate>200</EnergyUseRate>
+    <EnergyUseRate>300</EnergyUseRate>
   </PawnKindDef>
 
 
@@ -158,7 +158,7 @@
     <defName>MD2CleaningDroid</defName>
     <label>Cleaning Droid</label>
     <race>CleaningDroidRace</race>
-    <maxEnergy>400</maxEnergy>
+    <maxEnergy>300</maxEnergy>
     <allowedWorkTypeDefs>
       <li>Cleaning</li>
     </allowedWorkTypeDefs>
@@ -167,7 +167,7 @@
     <headGraphicPath></headGraphicPath>
     <Settings>MD2CleaningDroidSettings</Settings>
     <explodeOnDeath>false</explodeOnDeath>
-    <EnergyUseRate>230</EnergyUseRate>
+    <EnergyUseRate>150</EnergyUseRate>
   </PawnKindDef>
 
   <!-- <PawnKindDef ParentName="BaseDroidKind">
