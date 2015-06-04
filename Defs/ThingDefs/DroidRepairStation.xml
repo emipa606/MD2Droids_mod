@@ -40,7 +40,7 @@
     <comps>
       <li>
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>1000</basePowerConsumption>
+        <basePowerConsumption>200</basePowerConsumption>
         <efficiency>1</efficiency>
         <startElectricalFires>true</startElectricalFires>
       </li>

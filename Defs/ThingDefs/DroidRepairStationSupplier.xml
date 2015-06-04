@@ -61,7 +61,7 @@
     <rotatable>true</rotatable>
     <neverMultiSelect>true</neverMultiSelect>
     <designationCategory>Misc</designationCategory>
-    <researchPrerequisite>MD2DroidCharger</researchPrerequisite>
+    <researchPrerequisite>MD2DroidRepairStation</researchPrerequisite>
     <staticSunShadowHeight>0.3</staticSunShadowHeight>
     <itemSurface>true</itemSurface>
     <placeWorkers>

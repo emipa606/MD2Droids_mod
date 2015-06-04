@@ -48,7 +48,7 @@
     </costList>
     <graphicOverdraw>false</graphicOverdraw>
     <designationCategory>Misc</designationCategory>
-    <researchPrerequisite>MD2DroidRepairStation</researchPrerequisite>
+    <researchPrerequisite>MD2DroidCharger</researchPrerequisite>
     <passability>Standable</passability>
     <hasInteractionCell>true</hasInteractionCell>
     <interactionCellOffset>(0,0,0)</interactionCellOffset>
