@@ -146,7 +146,6 @@
     <race>CrematoriusDroidRace</race>
     <allowedWorkTypeDefs>
       <li>Firefighter</li>
-      <li>Flicker</li>
     </allowedWorkTypeDefs>
     <backstoryDef>CrematoriusDroid</backstoryDef>
     <standardBodyGraphicPath>Pawns/Droid/Crematorius/Cremabody</standardBodyGraphicPath>

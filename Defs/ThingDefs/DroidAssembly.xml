@@ -18,8 +18,11 @@
     <label>droid assembly</label>
     <ThingClass>MD2.Building_DroidAssembly</ThingClass>
     <Description>A workspace equipped for constructing droids.</Description>
-    <graphicPath>Buildings/DroidAssembly</graphicPath>
-    <graphicClass>Graphic_Single</graphicClass>
+    <graphicData>
+      <texPath>Buildings/DroidAssembly</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,1)</drawSize>
+    </graphicData>
     <tickerType>Rare</tickerType>
     <CostList>
       <Steel>200</Steel>
@@ -31,12 +34,11 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <Size>(3,1)</Size>
-    <graphicOverdraw>False</graphicOverdraw>
     <DesignationCategory>Production</DesignationCategory>
     <Passability>Impassable</Passability>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <itemSurface>True</itemSurface>
+    <surfaceType>Item</surfaceType>
     <comps>
       <li>
         <compClass>CompPowerTrader</compClass>

@@ -2,7 +2,7 @@
 <JobDefs>
   <JobDef>
     <defName>MD2DroidCremateCorpse</defName>
-    <driverClass>MD2.Job_DroidCremate</driverClass>
+    <driverClass>MD2.JobDriver_DroidCremate</driverClass>
     <reportString>Cremating TargetA.</reportString>
   </JobDef>
 </JobDefs>

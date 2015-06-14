@@ -367,7 +367,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <workSkill>Crafting</workSkill>
-  </RecipeDef>
+  </RecipeDef> 
 
   <RecipeDef ParentName="BaseDroidRecipe">
     <defName>MD2MakeCrematoriusDroid</defName>

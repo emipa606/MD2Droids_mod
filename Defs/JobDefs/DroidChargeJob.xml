@@ -2,7 +2,7 @@
 <JobDefs>
   <JobDef>
     <defName>MD2ChargeDroid</defName>
-    <driverClass>MD2.Job_DroidCharge</driverClass>
+    <driverClass>MD2.JobDriver_DroidCharge</driverClass>
     <reportString>Charging internal energy storage.</reportString>
   </JobDef>
 </JobDefs>

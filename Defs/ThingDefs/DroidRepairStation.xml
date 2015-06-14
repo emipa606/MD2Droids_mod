@@ -16,10 +16,13 @@
   <!--/////////////////////////////////Charging Pad/////////////////////////////////////////-->
   <ThingDef ParentName="mipBuildingBase" Class="MD2.ThingDef_RepairStation">
     <defName>MD2DroidRepairStation</defName>
-    <label>Droid Repair Station</label>
-    <thingClass>MD2.Building_DroidRepairStation</thingClass>
-    <graphicPath>Buildings/RepairStation</graphicPath>
-    <graphicClass>Graphic_Single</graphicClass>
+    <label>repair station</label>
+    <thingClass>MD2.Building_RepairStation</thingClass>
+    <graphicData>
+      <texPath>Buildings/RepairStation</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(2,1)</drawSize>
+    </graphicData>
     <altitudeLayer>Waist</altitudeLayer>
     <repairAmount>3</repairAmount>
     <repairThingDef>Steel</repairThingDef>
@@ -51,7 +54,6 @@
     <costList>
       <Steel>200</Steel>
     </costList>
-    <graphicOverdraw>false</graphicOverdraw>
     <designationCategory>Misc</designationCategory>
     <researchPrerequisite>MD2DroidRepairStation</researchPrerequisite>
     <passability>Impassable</passability>

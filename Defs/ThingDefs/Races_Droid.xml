@@ -14,6 +14,12 @@
   </ThingDef>
   <!--////////////////////////////////////-->
 
+  <!--      
+  <li>ITab_Pawn_Character</li>
+  <li>ITab_Pawn_Needs</li>
+  <li>ITab_Pawn_Gear</li>
+      -->
+
   <ThingDef Name="BasePawn" Abstract="True">
     <thingClass>MD2.Droid</thingClass>
     <category>Pawn</category>
@@ -25,19 +31,16 @@
     <soundImpactDefault>BulletImpactFlesh</soundImpactDefault>
     <inspectorTabs>
       <li>ITab_Pawn_Prisoner</li>
-      <li>ITab_Pawn_Gear</li>
       <li>ITab_Pawn_Health</li>
-      <li>ITab_Pawn_Character</li>
-      <li>ITab_Pawn_Needs</li>
+      <li>ITab_Pawn_Gear</li>
     </inspectorTabs>
     <drawGUIOverlay>true</drawGUIOverlay>
   </ThingDef>
 
-  <ThingDef Name="BaseDroid" Abstract="true" ParentName="BasePawn" Class="MD2.ThingDef_DroidRace">
+  <ThingDef Name="BaseDroid" Abstract="true" ParentName="BasePawn">
     <label>droid</label>
     <description>An intelligent droid.</description>
     <uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
-    <standardHeadGraphicPathMulti>Pawns/Droid/Head/DroidHead</standardHeadGraphicPathMulti>
     <useHitPoints>false</useHitPoints>
     <statBases>
       <MoveSpeed>4.75</MoveSpeed>
@@ -72,6 +75,7 @@
       <thinkTree>MD2DroidThinkTree</thinkTree>
       <mechanoid>true</mechanoid>
       <intelligence>ToolUser</intelligence>
+      <makesFootprints>true</makesFootprints>
       <hasGenders>false</hasGenders>
       <isFlesh>false</isFlesh>
       <hasLeather>false</hasLeather>
@@ -104,39 +108,34 @@
           </li>
         </points>
       </ageGenerationCurve>
-  </race>
+    </race>
   </ThingDef>
 
-  <ThingDef ParentName="BaseDroid" Class="MD2.ThingDef_DroidRace">
+  <ThingDef ParentName="BaseDroid">
     <defName>DroidRace</defName>
     <label>droid</label>
     <description>An intelligent droid.</description>
-    <uiIconPath>Things/Pawn/HumanLike/UI/IconHuman</uiIconPath>
-    <standardHeadGraphicPathMulti>Pawns/Droid/Head/DroidHead</standardHeadGraphicPathMulti>
-
   </ThingDef>
 
-  <ThingDef ParentName="BaseDroid" Class="MD2.ThingDef_DroidRace">
+  <ThingDef ParentName="BaseDroid">
     <defName>CleaningDroidRace</defName>
     <label>droid</label>
     <description>An unintelligent cleaning droid.</description>
-    <uiIconPath>Things/Pawn/HumanLike/UI/IconHuman</uiIconPath>
-    <drawGUIOverlay>true</drawGUIOverlay>
     <statBases>
       <MoveSpeed>6</MoveSpeed>
       <MaxHitPoints>50</MaxHitPoints>
     </statBases>
-    <race>
-      <intelligence>ToolUser</intelligence>
-    </race>
   </ThingDef>
 
-  <ThingDef ParentName="BaseDroid" Class="MD2.ThingDef_DroidRace">
+  <ThingDef ParentName="BaseDroid">
     <defName>CrematoriusDroidRace</defName>
+    <label>crematorius</label>
     <thingClass>MD2.Crematorius</thingClass>
+    <inspectorTabs>
+      <li>MD2.ITab_CrematoriusControl</li>
+    </inspectorTabs>
     <statBases>
       <MoveSpeed>3.5</MoveSpeed>
-      <Flammability>0.0</Flammability>
       <MaxHitPoints>120</MaxHitPoints>
     </statBases>
     <race>

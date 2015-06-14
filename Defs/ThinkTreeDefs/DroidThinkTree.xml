@@ -10,8 +10,12 @@
         <li Class="ThinkNode_Subtree">
           <treeDef>BurningResponse</treeDef>
         </li>
-
-        <li Class="MD2.JobGiver_Critical"/>
+        
+        <li Class="ThinkNode_ConditionalColonist">
+          <subNodes>
+            <li Class="MD2.JobGiver_Critical"/>
+          </subNodes>
+        </li>
 
         <!-- Prisoner -->
         <li Class="ThinkNode_ConditionalPrisoner">
@@ -42,27 +46,23 @@
             <!-- Seek safe temperatures -->
             <li Class="JobGiver_SeekSafeTemperature" />
 
-            <!-- Do emergency work (supercedes satisfying needs, except starvation) -->
-            <li Class="ThinkNode_ConditionalStarving">
-              <invert>true</invert>
-              <subNodes>
-                <li Class="MD2.JobGiver_ForDroids">
-                  <emergency>true</emergency>
-                </li>
-              </subNodes>
+            <!-- Do emergency work -->
+            <li Class="MD2.JobGiver_ForDroids">
+              <emergency>true</emergency>
             </li>
 
             <li Class="MD2.JobGiver_StaySafe"/>
-
-            <!-- Optimize apparel -->
-            <li Class="JobGiver_OptimizeApparel" />
           </subNodes>
         </li>
 
         <!-- Main behavior core-->
         <li Class="MD2.JobGiver_ForDroids"/>
 
-        <li Class="MD2.JobGiver_TopUp"/>
+        <li Class="ThinkNode_ConditionalColonist">
+          <subNodes>
+            <li Class="MD2.JobGiver_TopUp"/>
+          </subNodes>
+        </li>
 
         <!-- Idle wander for colonists -->
         <li Class="ThinkNode_ConditionalColonist">

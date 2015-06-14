@@ -33,8 +33,10 @@
     <selectable>false</selectable>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Metal_Drop</soundDrop>
-    <graphicPath>Default</graphicPath>
-    <graphicClass>Graphic_Single</graphicClass>
+    <graphicData>
+      <texPath>Default</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <thingCategories>
       <li>MD2Spawners</li>
     </thingCategories>

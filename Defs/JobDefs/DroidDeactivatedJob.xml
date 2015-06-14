@@ -2,7 +2,7 @@
 <JobDefs>
   <JobDef>
     <defName>MD2DroidDeactivatedJob</defName>
-    <driverClass>MD2.Job_DroidDeactivated</driverClass>
+    <driverClass>MD2.JobDriver_DroidDeactivated</driverClass>
     <reportString>Deactivated.</reportString>
   </JobDef>
 </JobDefs>

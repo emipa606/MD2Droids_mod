@@ -2,7 +2,7 @@
 <JobDefs>
   <JobDef>
     <defName>MD2DroidGotoRepairStation</defName>
-    <driverClass>MD2.Job_DroidRepair</driverClass>
+    <driverClass>MD2.JobDriver_DroidRepair</driverClass>
     <reportString>Getting repairs.</reportString>
   </JobDef>
 </JobDefs>

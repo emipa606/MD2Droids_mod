@@ -10,13 +10,15 @@
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>BuildingRubble</filthLeaving>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>MD2RepairStationSupplier</defName>
     <label>repair station supplier</label>
     <thingClass>Building_Storage</thingClass>
-    <graphicPath>Things/Building/Production/Hopper</graphicPath>
-    <graphicClass>Graphic_Single</graphicClass>
+    <graphicData>
+      <texPath>Things/Building/Production/Hopper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <altitudeLayer>Waist</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.5</fillPercent>
@@ -29,19 +31,19 @@
     <building>
       <fixedStorageSettings>
         <priority>Important</priority>
-        <allowances>
+        <filter>
           <ThingDefs>
             <li>Steel</li>
           </ThingDefs>
-        </allowances>
+        </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <priority>Important</priority>
-        <allowances>
+        <filter>
           <ThingDefs>
             <li>Steel</li>
           </ThingDefs>
-        </allowances>
+        </filter>
       </defaultStorageSettings>
     </building>
     <inspectorTabs>
@@ -63,7 +65,7 @@
     <designationCategory>Misc</designationCategory>
     <researchPrerequisite>MD2DroidRepairStation</researchPrerequisite>
     <staticSunShadowHeight>0.3</staticSunShadowHeight>
-    <itemSurface>true</itemSurface>
+    <surfaceType>Item</surfaceType>
     <placeWorkers>
       <li>PlaceWorker_NextToHopperAccepter</li>
     </placeWorkers>
