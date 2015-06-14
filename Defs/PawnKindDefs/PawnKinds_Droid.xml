@@ -27,6 +27,7 @@
     <explosionRadius>1.9</explosionRadius>
     <disableOnSolarFlare>true</disableOnSolarFlare>
     <EnergyUseRate>300</EnergyUseRate>
+    <canManThings>true</canManThings>
   </PawnKindDef>
 
 
@@ -167,6 +168,7 @@
     <Settings>MD2CleaningDroidSettings</Settings>
     <explodeOnDeath>false</explodeOnDeath>
     <EnergyUseRate>150</EnergyUseRate>
+    <canManThings>false</canManThings>
   </PawnKindDef>
 
   <!-- <PawnKindDef ParentName="BaseDroidKind">
