@@ -28,7 +28,7 @@
     <repairThingDef>Steel</repairThingDef>
     <repairCostAmount>10</repairCostAmount>
     <replacePartsCostsResources>true</replacePartsCostsResources>
-    <repairTickCount>60</repairTickCount>
+    <ticksPerRepairCycle>180</ticksPerRepairCycle>
     <building>
       <wantsHopperAdjacent>true</wantsHopperAdjacent>
     </building>
